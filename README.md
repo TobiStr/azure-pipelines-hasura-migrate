@@ -25,7 +25,7 @@ In your pipeline.yml File add as Task:
       workingDirectory: $(WORKING_DIRECTORY)
 
 # Add Migration Task
-- task: hasura-migrate-task@0
+- task: hasura-migrate-task@1
     inputs:
       adminSecret: "<admin-secret>" # Required
       workingDirectory: "<path-to-config-yaml-directory>" # Optional
