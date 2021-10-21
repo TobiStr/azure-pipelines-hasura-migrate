@@ -1,0 +1,20 @@
+{
+  "name": "azure-pipelines-hasura-migrate",
+  "version": "0.0.1",
+  "description": "Azure DevOps Pipeline Extension to automatically apply migrations, metadata and seeds to hasura.",
+  "scripts": {
+    "build-it": "(cd hasura-migrate-task && npm install && npm run build && npm prune --production )",
+    "pack-it": "tfx extension create --manifest-globs vss-extension.json --rev-version --output-path dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TobiStr/azure-pipelines-hasura-migrate.git"
+  },
+  "keywords": [],
+  "author": "Tobias Streng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TobiStr/azure-pipelines-hasura-migrate/issues"
+  },
+  "homepage": "https://github.com/TobiStr/azure-pipelines-hasura-migrate#readme"
+}

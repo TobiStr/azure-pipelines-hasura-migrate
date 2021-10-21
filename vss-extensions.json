@@ -1,0 +1,51 @@
+{
+    "manifestVersion": 1,
+    "id": "hasura-migrate",
+    "publisher": "Tobias Streng",
+    "version": "0.0.1",
+    "name": "Hasura Migrate",
+    "description": "Tool to automatically apply migrations, metadata and seeds to hasura.",
+    "public": true,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/hasura-icon.png"
+    },
+    "files": [
+        {
+            "path": "hasura-migrate-task"
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "GetStarted.md"
+        }
+    },
+    "links": {
+        "getstarted": {
+            "uri": "https://github.com/TobiStr/azure-pipelines-hasura-migrate"
+        },
+        "repository": {
+            "type": "git",
+            "uri": "https://github.com/TobiStr/azure-pipelines-hasura-migrate"
+        }
+    },
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "hasura-migrate-task"
+            }
+        }
+    ]
+}
