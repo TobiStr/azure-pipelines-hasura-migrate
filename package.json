@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "Azure DevOps Pipeline Extension to automatically apply migrations, metadata and seeds to hasura.",
   "scripts": {
-    "build-it": "(cd hasura-migrate-task && npm install && npm run build && npm prune --production )",
-    "pack-it": "tfx extension create --manifest-globs vss-extension.json --rev-version --output-path dist"
+    "build": "(cd hasura-migrate-task && npm install && npm run build && npm prune --production )",
+    "pack": "tfx extension create --manifest-globs vss-extensions.json --rev-version --output-path dist",
+    "publish": "tfx extension publish --manifest-globs vss-extensions.json"
   },
   "repository": {
     "type": "git",
