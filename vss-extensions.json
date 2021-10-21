@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "hasura-migrate",
-    "publisher": "Tobias Streng",
+    "publisher": "Tobias-Streng",
     "version": "0.0.1",
     "name": "Hasura Migrate",
     "description": "Tool to automatically apply migrations, metadata and seeds to hasura.",
