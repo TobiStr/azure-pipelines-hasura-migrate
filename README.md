@@ -1,6 +1,6 @@
 # Hasura Migrate Task for Azure Pipelines
 
-[Get it here](https://marketplace.visualstudio.com/items?itemName=Tobias-Streng.hasura-migrate)
+[Get it Here](https://marketplace.visualstudio.com/items?itemName=Tobias-Streng.hasura-migrate)
 
 Azure DevOps Pipeline Extension to automatically apply migrations, metadata and seeds to hasura.
 
@@ -14,11 +14,10 @@ In your pipeline.yml File add as Task:
 # Install Hasura CLI
 - script: |
         npm i -g hasura-cli
-      displayName: Install NPM Dependencies
-      workingDirectory: $(WORKING_DIRECTORY)
+    displayName: Install NPM Dependencies
 
 # Add Migration Task
-- task: hasura-migrate-task@2
+- task: hasura-migrate-task@0
     displayName: Hasura Migrate
     inputs:
       adminSecret: "<admin-secret>" # Required
