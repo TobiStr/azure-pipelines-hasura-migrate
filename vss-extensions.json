@@ -24,7 +24,7 @@
     ],
     "content": {
         "details": {
-            "path": "GetStarted.md"
+            "path": "README.md"
         }
     },
     "links": {
@@ -38,7 +38,7 @@
     },
     "contributions": [
         {
-            "id": "custom-build-release-task",
+            "id": "hasura-migrate-task",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
