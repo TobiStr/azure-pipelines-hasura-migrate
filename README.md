@@ -1,5 +1,7 @@
 # Hasura Migrate Task for Azure Pipelines
 
+[Get it here](https://marketplace.visualstudio.com/items?itemName=Tobias-Streng.hasura-migrate)
+
 Azure DevOps Pipeline Extension to automatically apply migrations, metadata and seeds to hasura.
 
 The extension will first apply all migrations, then all seeds and then metadata.
